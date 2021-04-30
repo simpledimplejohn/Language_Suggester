@@ -1,10 +1,13 @@
 $(document).ready(function() {
-    $("form#language").submit(function(event) {
+    $("form#form").submit(function(event) {
         event.preventDefault();
-        console.log("button clicked.");
-        const name1 = $('#name').val();
-        console.log(name1);
-        const language1 = $('#language').val();
-        console.log(language1);
+        console.log("button clicked.") //debug
+        let language = $("#language").val();
+
+        console.log(language); //debug
+
+
+
+
     });
 });
