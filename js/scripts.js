@@ -1,4 +1,4 @@
-function finalScore(score1, score2) {
+function add(score1, score2) {
     return score1 + score2;
 }
 
@@ -8,7 +8,7 @@ $(document).ready(function() {
         console.log("button clicked.") //debug
         let score1 = parseInt($("#color").val());
         let score2 = parseInt($("#food").val());
-
+        let finalScore = add(score1, score2);
 
         console.log(score1); //debug
         console.log(score2); //debug
@@ -17,7 +17,7 @@ $(document).ready(function() {
 
         
 
-        if (finalScore > 10) {
+        if (finalScore >= 1) {
             $(".c_sharp").show();
         }
 
