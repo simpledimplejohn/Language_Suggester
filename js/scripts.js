@@ -1,5 +1,5 @@
-function add(score1, score2, score3) {
-    return score1 + score2 +score3;
+function add(score1, score2, score3, score4) {
+    return score1 + score2 + score3 + score4;
 }
 
 $(document).ready(function() {
@@ -9,10 +9,14 @@ $(document).ready(function() {
         let score1 = parseInt($("#color").val());
         let score2 = parseInt($("#food").val());
         let score3 = parseInt($("#country").val());
-        let finalScore = add(score1, score2, score3);
+        let score4 = parseInt($("#movie").val());
+
+        let finalScore = add(score1, score2, score3, score4);
 
         console.log(score1); //debug
         console.log(score2); //debug
+        console.log(score3);
+        console.log(score4);
         console.log(finalScore); //debug
         
 
