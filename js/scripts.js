@@ -1,27 +1,24 @@
+function finalScore(score1, score2) {
+    return score1 + score2;
+}
+
 $(document).ready(function() {
     $("form#form").submit(function(event) {
         event.preventDefault();
         console.log("button clicked.") //debug
-        let language = $("#color").val();
-        console.log(language); //debug
+        let score1 = parseInt($("#color").val());
+        let score2 = parseInt($("#food").val());
+
+
+        console.log(score1); //debug
+        console.log(score2); //debug
+        console.log(finalScore); //debug
         
-        if (language == 'red') {
+
+        
+
+        if (finalScore > 10) {
             $(".c_sharp").show();
-        }
-        if (language == 'blue') {
-            $(".go").show();
-        }
-        if (language == 'brown') {
-            $(".javascript").show();
-        }
-        if (language == 'yellow') {
-            $(".ruby").show();
-        }
-        if (language == 'green') {
-            $(".rust").show();
-        }
-        if (language == 'orange') {
-            $(".swift").show();
         }
 
 
