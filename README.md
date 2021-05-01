@@ -32,7 +32,7 @@ score the participant gets will determine which language is displayed at the end
 
 ## Github Link
 
-
+[Github](https://Language_Suggester.github.io/Language_Suggester/)
 
 ## Contact Information
 
