@@ -21,11 +21,23 @@ $(document).ready(function() {
         console.log(score5);
         console.log(finalScore); //debug
         
-
-        
-
-        if (finalScore >= 1) {
+        if (finalScore >= '1') {
             $(".c_sharp").show();
+        }
+        if (finalScore >= '8') {
+            $(".go").show();
+        }
+        if (finalScore >= '13') {
+            $(".javascript").show();
+        }
+        if (finalScore >= '18') {
+            $(".ruby").show();
+        }
+        if (finalScore >= '22') {
+            $(".rust").show();
+        }
+        if (finalScore >= '25') {
+            $(".swift").show();
         }
 
 
