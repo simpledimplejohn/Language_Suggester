@@ -21,22 +21,22 @@ $(document).ready(function() {
         console.log(score5);
         console.log(finalScore); //debug
         
-        if (finalScore >= '1') {
+        if (finalScore >= 1 && finalScore <= 8) {
             $(".c_sharp").show();
         }
-        if (finalScore >= '8') {
+        if (finalScore >= 9 && finalScore <= 12) {
             $(".go").show();
         }
-        if (finalScore >= '13') {
+        if (finalScore >= 13 && finalScore <= 17) {
             $(".javascript").show();
         }
-        if (finalScore >= '18') {
+        if (finalScore >= 18 && finalScore <= 20) {
             $(".ruby").show();
         }
-        if (finalScore >= '22') {
+        if (finalScore >= 21 && finalScore <= 25) {
             $(".rust").show();
         }
-        if (finalScore >= '25') {
+        if (finalScore >= 26 && finalScore <= 30) {
             $(".swift").show();
         }
 
