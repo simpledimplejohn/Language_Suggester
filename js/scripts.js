@@ -23,20 +23,50 @@ $(document).ready(function() {
         
         if (finalScore >= 1 && finalScore <= 8) {
             $(".c_sharp").show();
+            $(".go").hide();
+            $(".javascript").hide();
+            $(".ruby").hide();
+            $(".rust").hide();
+            $(".swift").hide();
         }
-        if (finalScore >= 9 && finalScore <= 12) {
+        else if (finalScore >= 9 && finalScore <= 12) {
+            $(".c_sharp").hide();
             $(".go").show();
+            $(".javascript").hide();
+            $(".ruby").hide();
+            $(".rust").hide();
+            $(".swift").hide();
         }
-        if (finalScore >= 13 && finalScore <= 17) {
+        else if (finalScore >= 13 && finalScore <= 17) {
+            $(".c_sharp").hide();
+            $(".go").hide();
             $(".javascript").show();
+            $(".ruby").hide();
+            $(".rust").hide();
+            $(".swift").hide();
         }
-        if (finalScore >= 18 && finalScore <= 20) {
+        else if (finalScore >= 18 && finalScore <= 20) {
+            $(".c_sharp").hide();
+            $(".go").hide();
+            $(".javascript").hide();
             $(".ruby").show();
+            $(".rust").hide();
+            $(".swift").hide();
         }
-        if (finalScore >= 21 && finalScore <= 25) {
+        else if (finalScore >= 21 && finalScore <= 25) {
+            $(".c_sharp").hide();
+            $(".go").hide();
+            $(".javascript").hide();
+            $(".ruby").hide();
             $(".rust").show();
+            $(".swift").hide();
         }
-        if (finalScore >= 26 && finalScore <= 30) {
+        else {
+            $(".c_sharp").hide();
+            $(".go").hide();
+            $(".javascript").hide();
+            $(".ruby").hide();
+            $(".rust").hide();
             $(".swift").show();
         }
 
